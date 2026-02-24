@@ -6,16 +6,16 @@ This program provides functionality to add numbers.
 """
 
 
-def add(a, b):
+def add(a: float, b: float) -> float:
     """
     Add two numbers together.
     
     Args:
-        a: First number
-        b: Second number
+        a (float): First number (int or float)
+        b (float): Second number (int or float)
     
     Returns:
-        The sum of a and b
+        float: The sum of a and b
     """
     return a + b
 
@@ -26,16 +26,16 @@ def main():
     print("-" * 20)
     
     # Example 1: Adding two integers
-    num1 = 5
-    num2 = 3
-    result = add(num1, num2)
-    print(f"{num1} + {num2} = {result}")
+    first_integer = 5
+    second_integer = 3
+    result = add(first_integer, second_integer)
+    print(f"{first_integer} + {second_integer} = {result}")
     
     # Example 2: Adding two floats
-    num3 = 10.5
-    num4 = 4.5
-    result2 = add(num3, num4)
-    print(f"{num3} + {num4} = {result2}")
+    first_float = 10.5
+    second_float = 4.5
+    result2 = add(first_float, second_float)
+    print(f"{first_float} + {second_float} = {result2}")
     
     # Example 3: Interactive addition
     print("\nTry it yourself:")
